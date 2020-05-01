@@ -9,8 +9,8 @@ function App() {
       username: '',
       password: '',
     },
-    onSubmit: async (value) => {
-      console.log(value);
+    onSubmit: async (values) => {
+      window.alert('Submitted!');
     },
     validationSchema: () => {
       return Yup.lazy(({ username }) => {
