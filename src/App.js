@@ -28,7 +28,7 @@ function App() {
           password: Yup.string()
             .matches(
               /[0-9][a-zA-Z]/,
-              'Password must contain lowercase letters, uppercase letters and numbers'
+              'Password must contain lowercase letters and numbers'
             )
             .min(6, 'Password must be at least 6 characters')
             .required('Password is required'),
